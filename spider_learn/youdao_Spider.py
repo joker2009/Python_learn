@@ -20,3 +20,8 @@ formdata = {
 }
 
 data = urllib.urlencode(formdata)
+
+request = urllib2.Request(url, data = data, headers= headers)
+response = urllib2.urlopen(request)
+print(response.read())
+
