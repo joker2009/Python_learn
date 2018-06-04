@@ -3,7 +3,7 @@ __author__ = 'joker_jiang'
 import urllib
 import urllib2
 
-# POST请求的目标URL
+
 url = "http://fanyi.youdao.com/translate?smartresult=dict&smartresult=rule&smartresult=ugc&sessionFrom=null"
 
 headers= {"User-Agent": "Mozilla..."}
