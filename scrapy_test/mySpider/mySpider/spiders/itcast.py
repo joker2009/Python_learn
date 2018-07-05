@@ -1,6 +1,10 @@
 # -*- coding: utf-8 -*-
 import scrapy
 from mySpider.items import ItcastItem
+import sys
+
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 class ItcastSpider(scrapy.Spider):
     name = 'itcast'
@@ -28,8 +32,9 @@ class ItcastSpider(scrapy.Spider):
             item['name'] = name[0]
             item['title'] = title[0]
             item['info'] = info[0]
-
-            items.append(item)
-        return items
+            yield item
+        #     items.append(item)
+        # print(items)
+        # return items
 
 
