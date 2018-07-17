@@ -69,7 +69,8 @@ ITEM_PIPELINES = {
     "mySpider.pipelines.ItcastJsonPipeline":300,
     "mySpider.pipelines.TencentJsonPipeline": 300
 }
-
+LOG_FILE = "TencentSpider.log"
+LOG_LEVEL = "INFO"
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
 #AUTOTHROTTLE_ENABLED = True

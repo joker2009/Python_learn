@@ -13,7 +13,7 @@ class ItcastJsonPipeline(object):
         content = json.dumps(dict(item), ensure_ascii=False) + "\n"
         self.file.write(content)
         return item
-    def closr_spider(self, spider):
+    def close_spider(self, spider):
         self.file.close()
 
 

@@ -25,4 +25,11 @@ class TencentItem(scrapy.Item):
     workLocation = scrapy.Field()
     publishTime = scrapy.Field()
 
+class DouyuspiderItem(scrapy.Item):
+    name = scrapy.Field() # 存储照片的名字
+    imagesUrls = scrapy.Field() # 照片的URL路径
+    imagesPath = scrapy.Field() # 照片保存在本地的路径
+
+
+
 
